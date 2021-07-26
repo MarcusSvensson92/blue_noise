@@ -10,5 +10,5 @@ A blue noise generator using the void-and-cluster method. Made for learning. Wri
 ## Example Command Line
 
 ```
-cargo run --release noise.png 128 1.5
+cargo run --release noise.png 128
 ```

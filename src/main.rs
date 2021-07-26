@@ -61,7 +61,12 @@ fn main() {
         .skip(1); // Skip program name
     let filename = args.next().expect("Expected filename");
     let width = args.next().expect("Expected width").parse::<u32>().expect("Width is not a valid number");
-    let sigma = args.next().expect("Expected sigma").parse::<f32>().expect("Sigma is not a valid number");
+
+    // Read optional command line arguments
+    let mut sigma = 1.5;
+    if let Some(value) = args.next() {
+        sigma = value.parse::<f32>().expect("Sigma is not a valid number");
+    }
 
     let num_pixels = (width * width) as usize;
 

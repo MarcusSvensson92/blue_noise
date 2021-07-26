@@ -21,8 +21,7 @@
             },
             "args": [
                 "noise.png",
-                "128",
-                "1.5"
+                "128"
             ],
             "cwd": "${workspaceFolder}"
         },
